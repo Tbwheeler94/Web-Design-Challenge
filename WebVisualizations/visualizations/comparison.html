@@ -1,0 +1,140 @@
+<!--Document type details-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Connections to style.css and bootstrap-->
+<!-- Bootstrap JS -->
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Small Navbar-->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                      <a class="dropdown-item" href="temp.html">Temperature</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item right-item">
+                    <a class="nav-link nav-text" href="data.html">Data</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      <nav class="navbar-dark" style="background-color: lightseagreen;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    <!--Navbar-->
+    <!--Problems: Dropdown doesn't work -->
+    <nav class="navbar navbar-expand-md bg-white">
+        <span class="navbar-brand bg-green">Latitude</span>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                      <a class="dropdown-item" href="temp.html">Temperature</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item right-item">
+                    <a class="nav-link nav-text" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main page display boxes-->
+    <!-- Dropdown disappears when size is reduced, boxes do not readjust horizontally -->
+    <!-- No horizontal line between photos when screen reduced-->
+    <div class="container">
+        <div class="row">
+            <br><br>
+        </div>
+        <div class="row">
+        <div class="col-md-12 top-display">
+            <h1 style="color:lightseagreen">Comparision: Latitude vs. X</h1>
+            <hr><br>
+            <p>Click any plot to get an in-depth analysis.</p>
+        </div>
+        </div>
+        <!--4 chart area-->
+        <div class="row">
+            <div class="col-md-auto top-display display-box-comparison">
+                <div class="green-text" style="text-align: center;">
+                    <h3 style="color:lightseagreen">vs. Max Temperature</h3>
+                </div>
+                <a href="temp.html">
+                <img src="../Resources/Temperature.png" width="510" height="333">
+                </a>
+            </div>
+            <div class="col-md-6 top-display display-box-comparison">
+                <div class="green-text" style="text-indent: 34%;">
+                    <h3 style="color:lightseagreen">vs. Humidity</h3>
+                </div>
+                <a href="humidity.html">
+                <img src="../Resources/Humidity.png" width="510" height="333">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto top-display display-box-comparison">
+                <div class="green-text" style="text-align: center;">
+                    <h3 style="color:lightseagreen">vs. Wind Speed</h3>
+                </div>
+                <a href="wind.html">
+                <img src="../Resources/Wind.png" width="510" height="333">
+                </a>
+            </div>
+            <div class="col-md-6 top-display display-box-comparison">
+                <div class="green-text" style="text-indent: 34%;">
+                    <h3 style="color:lightseagreen">vs. Cloudiness</h3>
+                </div>
+                <a href="cloudiness.html">
+                <img src="../Resources/cloudiness.png" width="510" height="333">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+     <!--Footer-->
+    <footer class="footer">
+        <p class="footer-top"> </p> 
+        <div class="footer-text" style="text-align: center;">
+        © Copyright Poseidon Designs 2020
+        </div>
+    </footer>
+    
+</body>

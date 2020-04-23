@@ -1,0 +1,133 @@
+<!--Document type details-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Connections to style.css and bootstrap-->
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Small Navbar-->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                      <a class="dropdown-item" href="temp.html">Temperature</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item right-item">
+                    <a class="nav-link nav-text" href="data.html">Data</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      <nav class="navbar-dark" style="background-color: lightseagreen;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-white">
+        <span class="navbar-brand bg-green">Latitude</span>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                        <a class="dropdown-item" href="temp.html">Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item right-item">
+                    <a class="nav-link nav-text" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main page display boxes-->
+    <!-- Dropdown disappears when size is reduced, boxes do not readjust horizontally -->
+    <div class="container">
+        <div class="row">
+            <br><br>
+        </div>
+        <div class="row">
+          <div class="col-md-7 individual-display" style="float:inline-start;">
+            <h1 style="color:lightseagreen">Wind Speed</h1>
+            <hr>
+            <img src="../Resources/Wind.png" width="550" height="366" class="pic-reduce">
+            <br><br>
+            <p style="line-height:36px">I was surprised to find wind speed to be relatively consistent across
+            all latitudes. My hypothesis was that there would be higher wind speeds near the equator and poles
+            as there is more intense storm activity in these locations. Looks like I don't know the Earth as well
+            as I thought!</p>
+          </div>
+          <div class="col-md-auto"></div>
+          <div class="col-md-4 individual-display h-50">
+            <h2 style="color:lightseagreen">Visualizations</h2>
+            <hr><br>
+            <div class="row">
+                <div class="col">
+                    <a href="wind.html">
+                    <img src="../Resources/Wind.png" class="vis-preview" width="125" height="125">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="temp.html">
+                    <img src="../Resources/Temperature.png" width="125" height="125">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="humidity.html">
+                    <img src="../Resources/Humidity.png" width="125" height="125">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="cloudiness.html">
+                    <img src="../Resources/Cloudiness.png" width="125" height="125">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <!--Footer-->
+    <footer class="footer">
+        <p class="footer-top"> </p> 
+        <div class="footer-text" style="text-align: center;">
+        © Copyright Poseidon Designs 2020
+        </div>
+    </footer>
+
+</body>
